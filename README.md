@@ -6,7 +6,7 @@ Static promo site for the Sora iPhone app (AI video creator). React 18 + TypeScr
 
 ```bash
 pnpm install
-pnpm dev        # http://localhost:5173/sorav1rf/
+pnpm dev        # http://localhost:5173/
 pnpm build      # outputs dist/
 ```
 
@@ -24,9 +24,10 @@ Marked `PLACEHOLDER` in the code: the operator's legal name (footer, ©), the do
 
 ## Deployment
 
-- Pages: `https://norin-web.github.io/sorav1rf/` (`base: "/sorav1rf/"` in `vite.config.ts`).
+- Live URL: `https://soraai.best/` (custom domain via `public/CNAME`, `base: "/"` in `vite.config.ts`).
+- Pages default URL `https://norin-web.github.io/sorav1rf/` only works with `base: "/sorav1rf/"`; do not mix the two.
 - Source in Pages settings must be **GitHub Actions**.
-- A custom domain needs `base: "/"` and `public/CNAME` in the same commit. Removing the domain brings `base` back to `/sorav1rf/`.
+- `base: "/"` and `public/CNAME` must stay in the same commit. Removing the domain means `base: "/sorav1rf/"` and deleting `public/CNAME`.
 - The workflow copies `index.html` to `404.html` so deep links work on Pages.
 
 ## Rules
