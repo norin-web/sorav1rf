@@ -5,10 +5,9 @@ import Reveal from "../components/Reveal";
 import Split from "../components/Split";
 
 const phones = [
-  { src: "/images/phone-home.png", alt: "Home screen with the For you feed" },
-  { src: "/images/phone-detail.png", alt: "A video with its prompt and model label" },
-  { src: "/images/phone-generating.png", alt: "Create video screen while the video is generating" },
-  { src: "/images/phone-actions.png", alt: "New video screen with Save, Regenerate and more actions" },
+  { src: "/images/mock-create.webp", alt: "Create video screen with a style picker and a prompt" },
+  { src: "/images/mock-new.webp", alt: "New video screen with the prompt and Save button" },
+  { src: "/images/mock-play.webp", alt: "A generated video playing full screen" },
 ];
 
 export default function OurApp() {

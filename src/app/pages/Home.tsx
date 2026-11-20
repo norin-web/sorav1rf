@@ -26,7 +26,7 @@ export default function Home() {
 
       {/* S02 Mockup — clean screen from the app's Home tab */}
       <section className="mockup" aria-label="The app on iPhone">
-        <img src={img("/images/phone-home.png")} alt="Sora app Home screen with the For you feed" width={402} height={874} />
+        <img src={img("/images/mock-hands.webp")} alt="A hand holding an iPhone with the Sora Home screen open" width={2000} height={1186} />
       </section>
 
       {/* S03 Features */}
@@ -52,9 +52,9 @@ export default function Home() {
       <section className="section section--tight">
         <div className="container">
           <div className="shots">
-            <Reveal className="shots__item"><img src={img("/images/phone-detail.png")} alt="A video with its prompt and model label" loading="lazy" /></Reveal>
-            <Reveal className="shots__item" delay={80}><img src={img("/images/phone-generating.png")} alt="Create video screen while the video is generating" loading="lazy" /></Reveal>
-            <Reveal className="shots__item" delay={160}><img src={img("/images/phone-actions.png")} alt="New video screen with Save, Regenerate and more actions" loading="lazy" /></Reveal>
+            <Reveal className="shots__item"><img src={img("/images/mock-create.webp")} alt="Create video screen with a style picker and a prompt" loading="lazy" width={1065} height={2000} /></Reveal>
+            <Reveal className="shots__item" delay={80}><img src={img("/images/mock-new.webp")} alt="New video screen with the prompt and Save button" loading="lazy" width={1065} height={2000} /></Reveal>
+            <Reveal className="shots__item" delay={160}><img src={img("/images/mock-play.webp")} alt="A generated video playing full screen" loading="lazy" width={1065} height={2000} /></Reveal>
           </div>
         </div>
       </section>
