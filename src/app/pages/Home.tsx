@@ -26,7 +26,7 @@ export default function Home() {
 
       {/* S02 Mockup — clean screen from the app's Home tab */}
       <section className="mockup" aria-label="The app on iPhone">
-        <img src={img("/images/mock-hands.webp")} alt="A hand holding an iPhone with the Sora Home screen open" width={2000} height={1186} />
+        <img src={img("/images/mock-hands.webp")} alt="A hand holding an iPhone with the Sora Home screen open" width={1025} height={1133} />
       </section>
 
       {/* S03 Features */}

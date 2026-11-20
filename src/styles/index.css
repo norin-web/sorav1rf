@@ -188,7 +188,7 @@ ul, ol { padding: 0; list-style: none; }
 
 /* hand-held phone photo; bottom fades into the page */
 .mockup { position: relative; display: flex; justify-content: center; padding: 0 var(--gutter) 8px; }
-.mockup img { width: min(620px, 94vw); height: auto; aspect-ratio: auto; }
+.mockup img { width: min(560px, 92vw); height: auto; aspect-ratio: auto; -webkit-mask-image: linear-gradient(to bottom, #000 72%, transparent); mask-image: linear-gradient(to bottom, #000 72%, transparent); }
 
 /* Three clean screens from the Create flow: one column on phones, a row on desktop */
 .shots { display: grid; gap: 16px; justify-items: center; }
