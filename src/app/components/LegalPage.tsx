@@ -90,9 +90,11 @@ export default function LegalPage({ doc }: { doc: Doc }) {
       <section className="lhero">
         <div className="glow glow--left" aria-hidden="true" />
         <div className="container">
-          <Reveal as="span" className="eyebrow lhero__date">
-            {doc.updated ?? `Effective ${legalUpdated}`}
-          </Reveal>
+          {(doc.updated ?? legalUpdated) && (
+            <Reveal as="span" className="eyebrow lhero__date">
+              {doc.updated ?? `Effective ${legalUpdated}`}
+            </Reveal>
+          )}
           <Split as="h1" className="lhero__title" parts={[[doc.title]]} />
           <Reveal className="lhero__meta" delay={400}>
             <span>{sections.length} sections</span>

@@ -42,13 +42,15 @@ export const appFeatures = [
   { tag: "04 · Library", title: "Recent, Saved, Favorites", text: "Generated videos are kept on your device in Recent, Saved and Favorites, and you can delete them yourself." },
 ];
 
+// Rows whose value is still unknown are left out, not shown as placeholders.
+const known = (v: string) => !v.includes("PLACEHOLDER");
 export const specs: [string, string][] = [
   ["Platform", "iPhone"],
   ["Requirements", "Internet connection for AI generation"],
   ["Account", "Not required"],
   ["Purchases", "Subscriptions through your Apple ID"],
-  ["Compatibility", `iPhone · iOS ${app.minIOS} or later`],
-  ["Category", app.category],
+  ...(known(app.minIOS) ? [["Compatibility", `iPhone · iOS ${app.minIOS} or later`] as [string, string]] : []),
+  ...(known(app.category) ? [["Category", app.category] as [string, string]] : []),
 ];
 
 export const faq = [
